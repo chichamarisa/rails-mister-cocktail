@@ -54,6 +54,10 @@ Cocktail.create(
   name: "Screwdriver"
   )
 
+Cocktail.create(
+  name: "Manhattan"
+  )
+
 
 
 
