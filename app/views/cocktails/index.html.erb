@@ -1,0 +1,19 @@
+<h1>HELLOOOO COCK-TAIL 🐓</h1>
+
+<div class="container">
+
+<div class="row">
+
+<% @cocktails.each do |cocktail| %>
+<div class="card" style="width: 18rem;">
+  <img src="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2018/12/212.jpg" class="card-img-top" alt="...">
+  <div class="card-body mb-3 flex">
+    <h5 class="card-title"><%= link_to cocktail.name, cocktail_path(cocktail.id) %></h5>
+    <p class="card-text"></p>
+    <p><%= link_to 'Add ingredients', new_cocktail_dose_path(cocktail.id) %></p>
+  </div>
+</div>
+<% end %>
+</div>
+</div>
+
